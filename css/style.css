@@ -1,0 +1,30 @@
+body {
+    display: flex; /* Activa Flexbox para alinear contenido fácilmente */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura del viewport */
+    background: linear-gradient(135deg, #ad8ace 0%, #5deeb6 100%); /* Fondo con degradado diagonal de colores vibrantes */
+    padding: 20px; /* Espacio interior para evitar que el contenido toque los bordes */
+}
+/* Cuadro principal centrado */
+.container {
+    background-color: rgb(20, 223, 212); /* Fondo blanco para el contenedor, que se ve como una tarjeta */
+    padding: 40px 30px; /* Espaciado interno generoso para separar el contenido de los bordes */
+    border-radius: 16px; /* Bordes redondeados para un diseño moderno y suave */
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2); /* Sombra pronunciada para dar profundidad (efecto "flotante") */
+    max-width: 700px; /* Ancho máximo para evitar que se expanda demasiado en pantallas grandes */
+    width: 100%; /* Ocupa todo el ancho disponible dentro del límite definido */
+    animation: popIn 0.5s ease; /* Aplica animación de aparición al cargar */
+}
+/* Animación de aparición */
+@keyframes popIn {
+    from {
+        opacity: 0; /* Comienza completamente invisible */
+        transform: scale(0.95); /* Comienza un poco más pequeño */
+    }
+    to {
+        opacity: 1; /* Termina completamente visible */
+        transform: scale(1); /* Termina a tamaño normal */
+    }
+}
+/* Fin animación */

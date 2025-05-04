@@ -1,0 +1,70 @@
+<!-- Declaración del tipo de documento HTML5 -->
+<!DOCTYPE html>
+<html lang="es"><!-- Lenguaje en español -->
+<head>
+    <!-- Metadatos básicos para configurar el documento -->
+    <meta charset="UTF-8"> <!-- Configuración de caracteres para soportar acentos y ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para responsive design -->
+    <title>Generador de Frases Motivacionales</title> <!-- Título que aparece en la pestaña del navegador -->
+    
+    <!-- Enlace a mi hoja de estilos CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Enlaces a Google Fonts para tipografías personalizadas -->
+    <!-- Preconectamos con Google Fonts para mejorar el rendimiento de carga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importamos las fuentes Montserrat y Poppins con diferentes pesos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor principal que envuelve toda la aplicación -->
+    <div class="container">
+        <!-- Cabecera de la aplicación -->
+        <header>
+            <h1>Generador de Frases Motivacionales</h1>
+            <p class="subtitle">Inspiración para cada día</p>
+        </header>
+        
+        <!-- Contenido principal de la aplicación -->
+        <main>
+            <!-- Contenedor para la frase motivacional y sus botones de acción -->
+            <div class="quote-container">
+                <!-- Aquí se muestra la frase y su autor -->
+                <div class="quote-content">
+                    <p id="quote-text">Haz clic en el botón para generar una frase motivacional</p>
+                    <p id="quote-author"></p> <!-- Este elemento se llenará con JavaScript -->
+                </div>
+                
+                <!-- Botones para interactuar con la frase actual -->
+                <div class="quote-actions">
+                    <button id="generate-btn" class="btn primary">Generar Frase</button>
+                    <button id="copy-btn" class="btn secondary">Copiar</button>
+                </div>
+            </div>
+            
+            <!-- Contenedor para los filtros de categoría -->
+            <div class="category-container">
+                <h2>Filtrar por categoría</h2>
+                <div class="category-buttons">
+                    <!-- Cada botón tiene un atributo data-category que usaré en JavaScript -->
+                    <button class="category-btn" data-category="all">Todas</button>
+                    <button class="category-btn" data-category="success">Éxito</button>
+                    <button class="category-btn" data-category="perseverance">Perseverancia</button>
+                    <button class="category-btn" data-category="courage">Valentía</button>
+                    <button class="category-btn" data-category="happiness">Felicidad</button>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Pie de página de la aplicación -->
+        <footer>
+            <p>Proyecto de aprendizaje Brayan Bautista| © 2025</p>
+        </footer>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript que maneja la lógica de la aplicación -->
+    <!-- Lo coloco al final para que se cargue después del HTML -->
+    <script src="./script.js"></script>
+</body>
+</html>
